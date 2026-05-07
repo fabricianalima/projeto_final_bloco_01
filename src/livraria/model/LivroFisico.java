@@ -4,8 +4,8 @@ public class LivroFisico extends Livro {
 
 	private String tipoDeCapa;
 
-	public LivroFisico(String titulo, double valor, int numeroLivro, String autor, String tipoDeCapa) {
-		super(titulo, valor, numeroLivro, autor);
+	public LivroFisico(int numeroLivro, String titulo, double valor, String autor, String tipoDeCapa) {
+		super(numeroLivro,titulo, valor, autor);
 		this.tipoDeCapa = tipoDeCapa;
 	}
 

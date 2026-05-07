@@ -4,8 +4,8 @@ public class LivroEbook extends Livro{
 	
 	private String formatoArquivo;
 
-	public LivroEbook(String titulo, double valor, int numeroLivro, String autor, String formatoArquivo) {
-		super(titulo, valor, numeroLivro, autor);
+	public LivroEbook(int numeroLivro, String titulo, double valor, String autor, String formatoArquivo) {
+		super(numeroLivro, titulo, valor, autor);
 		this.formatoArquivo = formatoArquivo;
 	}
 

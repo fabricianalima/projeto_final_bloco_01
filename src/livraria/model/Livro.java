@@ -2,17 +2,25 @@ package livraria.model;
 
 public abstract class Livro {
 
+	private int numeroLivro;
 	private String titulo;
 	private double valor;
-	private int numeroLivro;
 	private String autor;
 	
 
-	public Livro(String titulo, double valor, int numeroLivro, String autor) {
+	public Livro(int numeroLivro, String titulo, double valor, String autor) {
 		this.titulo = titulo;
 		this.valor = valor;
-		this.numeroLivro = numeroLivro;
 		this.autor = autor;
+		this.numeroLivro = numeroLivro;
+	}
+
+	public int getNumeroLivro() {
+		return numeroLivro;
+	}
+
+	public void setNumeroLivro(int numeroLivro) {
+		this.numeroLivro = numeroLivro;
 	}
 
 	public String getTitulo() {
@@ -31,13 +39,7 @@ public abstract class Livro {
 		this.valor = valor;
 	}
 
-	public int getNumeroLivro() {
-		return numeroLivro;
-	}
 
-	public void setNumeroLivro(int numeroLivro) {
-		this.numeroLivro = numeroLivro;
-	}
 
 	public String getAutor() {
 		return autor;
@@ -53,6 +55,7 @@ public abstract class Livro {
 		System.out.println("Nome: " + titulo);
 		System.out.println("Autor do Livro: " + autor);
 		System.out.println("Valor: " + valor);
-		System.out.println("Número do Livro: " + numeroLivro);
+		System.out.println("Número do livro: " + numeroLivro);
+
 }
 }
